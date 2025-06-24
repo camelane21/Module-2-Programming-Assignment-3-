@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class TestBinaryFormatException {
+public class Main {
     /** 
      * Converts a binary string into its decimal equivalent.
      * @throws BinaryFormatException if the string contains any character other than '0' or '1'
