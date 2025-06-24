@@ -13,4 +13,18 @@ public class TestBinaryFormatException {
         return decimalValue;
     }
 
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a binary number: ");
+        String binaryString = input.nextLine();
+
+        try {
+            int decimal = bin2Dec(binaryString);
+            System.out.println("The decimal value is " + decimal);
+        }
+        catch (BinaryFormatException ex) {
+            System.out.println("Not a binary number");
+        }
+    }
 }
